@@ -1,0 +1,17 @@
+# Starting VMware Tools.
+/usr/bin/vmware-user
+
+# Resizing screen resolution.
+#xrandr -s 1680x1050
+
+# Setup wallpaper.
+source ~/scripts/rotating-wallpapers/rotatewall.sh >  ~/logs/rotatewall.log 2>&1
+
+# Restart xmonad.
+xmonad --restart
+
+# Setting up right mouse cursor.
+xsetroot -cursor_name left_ptr
+
+# Setting up keybindings.
+xbindkeys

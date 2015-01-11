@@ -1,0 +1,15 @@
+background yes
+out_to_console yes
+out_to_x no
+
+# Update interval in seconds
+update_interval 1
+ 
+TEXT
+^fg(\#30FF41)^i(/home/javier/scripts/xmonad-config/dzen2/net_down_03.xbm) ^fg(\#93A1A1)${downspeed eth0} \
+^fg(\#FF530D)^i(/home/javier/scripts/xmonad-config/dzen2/net_up_03.xbm) ^fg(\#93A1A1)${upspeed eth0} \
+^fg(\#93A1A1)^i(/home/javier/scripts/xmonad-config/dzen2/cpu.xbm) ^fg(\#FFFFFF)${cpu}% \
+^fg(\#93A1A1)^i(/home/javier/scripts/xmonad-config/dzen2/mem.xbm) ^fg(\#FFFFFF)${memperc}% \
+^fg(\#93A1A1)^i(/home/javier/scripts/xmonad-config/dzen2/volume.xbm) ^fg(\#FFFFFF)${exec amixer get Master | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}% \
+^fg(\#ebac54)${time %a %d, %B %g}^fg(\#ebac54) ${time %X}
+
